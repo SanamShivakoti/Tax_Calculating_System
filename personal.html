@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculating System</title>
+    <link rel="stylesheet" href="personal.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="Heading">
+            <h1> <b>Income tax calculator, Nepal</b></h1>
+        </div>
+        <!-- For calculation part -->
+        <div class="Calculating">
+            <!-- Category -->
+            <div class="Category">
+                <label id="type">Category </label>
+                <select id="Category">
+                <option value="1">Personal</option>
+                <option value="2">Corporative</option>
+            </select>
+                <!-- Fiscal year option -->
+                <label id="year"> Fiscal Year </label>
+                <input type="text" placeholder="2078/079" id="Fiscal_year">
+                </label>
+            </div>
+            <!-- Annual Income Topic -->
+            <div class="Annual">
+                <h2>Annual Tax</h2>
+            </div>
+        </div>
+        <div>
+            <!-- Personal tax calculation-->
+            <div class="personal">
+                <h3><u>Personal</u></h3>
+                <!-- Employee option -->
+                <label class="Employee">Employee Status  
+            <select id="Employee">
+                <option value="1">Unmarried</option>
+                <option value="2">Married</option>
+            </select> 
+            </label>
+                <!-- Monthly Salary -->
+                <div class="monthly">
+                    <label id="salary">Monthly Salary</label>
+                    <input type="text" id="monthly" maxlength="8">
+                </div>
+                <!-- No. of months -->
+                <div class="month">
+                    <label id="no_of_months"> No. of Months </label>
+                    <input type="text" id="month" maxlength="2">
+                </div>
+                <!-- Bonus -->
+                <div class="bonus">
+                    <label id="B"> Bonus </label>
+                    <input type="text" id="bonus" maxlength="8">
+
+                </div>
+                <!-- Total tax of the year -->
+                <div class="total">
+                    <label id="T"> Total </label>
+                    <input type="text" id="total" maxlength="8">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- corporate tax calculation-->
+        <div class="Information">
+            <h3 id="General"><u>General Information</u></h3>
+            <p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+
+
+
+
+        <!-- for calculate button -->
+        <div class="button">
+            <button type="button" id="Calculate">Calculate</button>
+        </div>
+    </div>
+</body>
+
+<footer class="footer">
+    <div id="footer">
+        <h2>
+            <p>Authorized by Income tax calculating system, Nepal&copy;2022</p>
+        </h2>
+        <a href="Tax_system.html" class="link">Tax system of Nepal</a>
+    </div>
+</footer>
+</div>
+
+</html>
