@@ -1,0 +1,61 @@
+.table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+.topic{
+    text-align: center;
+    background-color: rgb(182, 137, 69);
+    box-sizing: border-box;
+    height:10vh;
+    
+}
+#link1{
+    float:center;
+    font-size: larger;
+    box-sizing: border-box;
+    
+}
+#link2{
+    text-align: center;
+    font-size: larger;
+}
+
+#link1{
+    padding-left: 10px;
+}
+.description{
+    font-size: x-large;
+    justify-content: cenetr;
+}
+
+.topic2{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    margin-top: 10px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: block;
+    line-height: 1.42857143;
+    height: 15vh;
+    padding-top:30px;
+    bottom: 0;
+    background-color:#959fa5;
+    color:white;
+    /* margin-left:10px;
+    margin-right: 10px;  */
+}
