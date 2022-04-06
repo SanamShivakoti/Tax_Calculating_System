@@ -276,7 +276,6 @@ body {
     margin-top: 505px;
     box-sizing: border-box;
     flex-shrink: 0;
-    display: block;
     line-height: 1.42857143;
     height: 25vh;
     padding-top: 50px;
@@ -285,6 +284,7 @@ body {
     color: white;
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
 }
 
 .link {
