@@ -8,6 +8,12 @@
     <title>Tax Calculating System</title>
     <link rel="stylesheet" href="corporate.css">
 </head>
+<!-- for page change to personal page -->
+<script>
+    function myfunction1(value) {
+        window.location.assign(`${value}`);
+    }
+</script>
 
 <body>
     <div class="wrapper"></div>
@@ -19,15 +25,15 @@
             <!-- Category -->
             <div class="Category">
                 <label>Category </label>
-                <select id="Category">
-            <option value="1">Personal</option>
-            <option value="2">Corporative</option>
+                <select id="Category" onchange="myfunction1(this.value)">
+            <option value="corporate.html">Corporate</option>
+            <option value="personal.html">Personal</option>
         </select>
 
                 <!-- Fiscal year option -->
                 <label class="year"> Fiscal Year 
-           <input  type="text"   placeholder="2078/079" id="Fiscal_year">
-        </label>
+                  <input  type="text"   placeholder="2078/079" id="Fiscal_year">
+                </label>
             </div>
             <!-- Annual Income Topic -->
             <div class="Annual">
