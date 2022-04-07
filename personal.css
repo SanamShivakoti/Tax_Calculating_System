@@ -8,15 +8,27 @@
     background-color: white;
 }
 
+
+/*For heading */
+
+.Heading {
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+}
+
 body {
     background-color: rgba(240, 248, 255, 0.6);
 }
 
-.wrapper {
+
+/* .wrapper {
     padding: 5%;
     height: auto;
     width: auto;
-}
+} */
 
 
 /* calculation div */
@@ -284,6 +296,7 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
+    display: block;
 }
 
 .link {
