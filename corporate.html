@@ -14,6 +14,7 @@
         window.location.assign(`${value}`);
     }
 </script>
+<script src="calculationc.js"></script>
 
 <body>
     <div class="wrapper"></div>
@@ -51,10 +52,10 @@
                 <div class="business">
                     <label id="business"> Business Type </label>
                     <select id="type">
-                <option value="1">Agriculture</option>
-                <option value="2">Machinery</option>
-                <option value="3">Handicrafts</option>
-                <option value="4">Education institution</option>
+                <option value="1">Normal Business</option>
+                <option value="2">General Insurance (Non-Life Insurance)</option>
+                <option value="3">Telecom and Internet Services</option>
+                <option value="4">Money transfer</option>
             </select>
                 </div>
                 <!-- Revenue of last year -->
@@ -74,8 +75,7 @@
                 </div>
                 <!-- Tax of the year -->
                 <div class="Tax_year">
-                    <label id="Tax_year"> Tax of the year </label>
-                    <input type="text" id="tax" maxlength="10">
+                    <label id="T"> Total tax: <span id="total-tax"></span> </label>
                 </div>
 
             </div>
@@ -90,10 +90,12 @@
         </div>
 
         <div class="button">
-            <button type="button" id="Calculate">Calculate</button>
+            <button type="button" id="Calculate" onclick="calculate_tax()">Calculate</button>
         </div>
 
         </div>
+
+
 
 </body>
 
@@ -103,5 +105,6 @@
     </h2>
     <a href="Tax_system.html" class="link">Tax system of Nepal</a>
 </footer>
+
 
 </html>
