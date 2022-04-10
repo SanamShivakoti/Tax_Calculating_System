@@ -15,6 +15,10 @@
     }
 </script>
 
+<script src="calculationp.js"></script>
+
+
+
 <body>
     <div class="wrapper">
         <div class="Heading">
@@ -68,8 +72,8 @@
                 </div>
                 <!-- Total tax of the year -->
                 <div class="total">
-                    <label id="T"> Total </label>
-                    <input type="text" id="total" maxlength="8">
+                    <label id="T"> Total tax: <span id="total-tax"></span> </label>
+
                 </div>
             </div>
         </div>
@@ -88,7 +92,7 @@
 
         <!-- for calculate button -->
         <div class="button">
-            <button type="button" id="Calculate">Calculate</button>
+            <button type="button" id="Calculate" onclick="calculate_tax()">Calculate</button>
         </div>
     </div>
 
@@ -102,6 +106,8 @@
         </div>
     </footer>
     </div>
+
+
 </body>
 
 </html>
